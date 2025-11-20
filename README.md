@@ -1,4 +1,6 @@
 # Liemorph
+
+This repository connects the TransMorph architecture for 3D deformable image registration with a standalone module to solve a flow equation on Lie groups.
 This repository is still under construction!
 
 
@@ -18,7 +20,6 @@ pip install git+https://github.com/princeton-vl/lietorch.git
 
 
 ## Papers
-This repository connects the TransMorph architecture for 3D deformable image registration with a standalone module to solve a flow equation on Lie groups.
 If you find this code useful, please cite:
 ```bibtex
 @article{Lietorch2025,
