@@ -18,6 +18,10 @@ If not, you can install it inside a Conda environment:
 
 ```bash
 conda install ninja
+```
+```bash
 conda install cuda-toolkit=12.6
+```
+```bash
 pip install git+https://github.com/princeton-vl/lietorch.git
 ```
