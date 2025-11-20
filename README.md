@@ -1,6 +1,23 @@
 # Liemorph
 This repository is still under construction!
 
+
+## Installation
+Make sure that the CUDA Toolkit is installed.  
+If not, you can install it inside a Conda environment:
+
+```bash
+conda install ninja
+```
+```bash
+conda install cuda-toolkit=12.6
+```
+```bash
+pip install git+https://github.com/princeton-vl/lietorch.git
+```
+
+
+## Papers
 This repository connects the TransMorph architecture for 3D deformable image registration with a standalone module to solve a flow equation on Lie groups.
 If you find this code useful, please cite:
 ```bibtex
@@ -46,17 +63,4 @@ and uses code from https://github.com/voxelmorph/voxelmorph/, https://github.com
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2021},
 }
-```
-## Installation
-Make sure that the CUDA Toolkit is installed.  
-If not, you can install it inside a Conda environment:
-
-```bash
-conda install ninja
-```
-```bash
-conda install cuda-toolkit=12.6
-```
-```bash
-pip install git+https://github.com/princeton-vl/lietorch.git
 ```
