@@ -11,8 +11,7 @@ Registration Using Flows on Lie Groups},
   journal={Prozeedings of BMVC2025 (in press)},
   year={2025}
 }
-
-```md
+```
 ## Installation
 Make sure that the CUDA Toolkit is installed.  
 If not, you can install it inside a Conda environment:
@@ -21,3 +20,4 @@ If not, you can install it inside a Conda environment:
 conda install ninja
 conda install cuda-toolkit=12.6
 pip install git+https://github.com/princeton-vl/lietorch.git
+```
