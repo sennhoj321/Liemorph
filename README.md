@@ -12,6 +12,8 @@ Registration Using Flows on Lie Groups},
   year={2025}
 }
 
+```md
+## Installation
 Make sure that the CUDA Toolkit is installed.  
 If not, you can install it inside a Conda environment:
 
