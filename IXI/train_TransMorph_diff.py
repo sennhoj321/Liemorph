@@ -111,16 +111,16 @@ def main():
     Initialize model
     '''
     config =  get_3DTransMorph_config()
-    model = TransMorphFlow(config)
+    model = TransMorphFlowSE3(config)
     model.cuda()
 
     '''
     Initialize spatial transformation function
     '''
     print(config.img_size)
-    reg_model = utils.register_model(config.img_size, 'nearest')
+    reg_model = utils.register_modelSE3(config.img_size, 'nearest')
     reg_model.cuda()
-    reg_model_bilin = utils.register_model(config.img_size, 'bilinear')
+    reg_model_bilin = utils.register_modelSE3(config.img_size, 'bilinear')
     reg_model_bilin.cuda()
 
 
