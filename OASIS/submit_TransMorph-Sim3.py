@@ -107,7 +107,7 @@ def main():
     Initialize model
     '''
     config =  get_3DTransMorph_config()
-    model = TransMorphFlowSE3(config)
+    model = TransMorphFlowSim3(config)
     model.cuda()
     best_model = torch.load(model_dir + natsorted(os.listdir(model_dir))[model_idx],weights_only=False)['state_dict']
     print('Best model: {}'.format(natsorted(os.listdir(model_dir))[model_idx]))
@@ -125,9 +125,9 @@ def main():
     Initialize spatial transformation function
     '''
     print(config.img_size)
-    reg_model = utils.register_modelSE3(config.img_size, 'nearest')
+    reg_model = utils.register_modelSim3(config.img_size, 'nearest')
     reg_model.cuda()
-    reg_model_bilin = utils.register_modelSE3(config.img_size, 'bilinear')
+    reg_model_bilin = utils.register_modelSim3(config.img_size, 'bilinear')
     reg_model_bilin.cuda()
     '''
     Validation
