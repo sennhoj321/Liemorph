@@ -1,7 +1,7 @@
 # Liemorph
 
 This repository connects the TransMorph architecture for 3D deformable image registration with a standalone module to solve a flow equation on Lie groups.
-This repository is still under construction!
+
 
 
 ## Installation
@@ -65,3 +65,4 @@ and uses code from https://github.com/voxelmorph/voxelmorph/, https://github.com
   year={2021},
 }
 ```
+Some parts are still under construction!
